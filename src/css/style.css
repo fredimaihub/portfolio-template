@@ -1,0 +1,227 @@
+body{
+    background-color: var(--black);
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-image: url("../images/background.jpg");
+}
+body div{
+    transition: 0.5s;
+}
+
+.header{
+    margin: 5% 0;
+    text-shadow: 5px 5px 10px 0 var(--shadow);
+    font-family: 'SF Mono Regular', sans-serif;
+}
+.flags{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.shadow{
+    box-shadow: 5px 5px 10px 0 var(--shadow);
+}
+
+.content{
+    background: var(--dark-transparent);
+    color: var(--white);
+    margin-top: 50px;
+    padding: 12.5px 25px;
+    min-height: 500px;
+}
+.content hr{
+    margin-top: 0.4rem;
+    border-color: var(--dark-gray);
+}
+.content .nav-tabs{
+    border-right: 1px solid var(--primary);
+    height: 100%;
+}
+.content .nav-tabs .nav-item{
+    height: min-content;
+    width: 100%;
+}
+
+.nav-tabs, .nav-tabs .nav-link{
+    font-family: 'SF Mono Regular', sans-serif;
+    border: none;
+    cursor: poin`;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: none;
+    color: var(--primary);
+    background-color: transparent;
+}
+.tab-content>.tab-pane:not(.active){
+    display: none !important;
+}
+.tab-content{
+    margin-left: 10px;
+}
+.tab-content img{
+    border: 1px solid var(--primary);
+}
+.tab-content h5{
+    color: var(--primary);
+}
+.tab-content hr{
+    border-color: var(--primary) !important;
+}
+
+.grid-block{
+    margin-top: 15px;
+}
+
+code{
+    font-size: inherit;
+    color: var(--primary);
+}
+.json, .json-title, .json-end{
+    font-family: 'SF Mono Regular', sans-serif;
+}
+.json code{
+    color: var(--yellow);
+}
+.content .json{
+    padding-left: 30px;
+}
+.content .text{
+    margin-top: 30px;
+    text-align: justify;
+}
+.content h2{
+    font-family: 'SF Mono Regular', sans-serif;
+}
+
+.skill{
+    margin-bottom: 1rem;
+}
+.skill i{
+    font-size: 22px;
+}
+.skill-bar{
+    height: 10px;
+    background: var(--dark);
+}
+.skill-bar .fill{
+    background: var(--gradient);
+    height: 100%;
+    width: 1%;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+}
+
+.download-btn{
+    width: 150px;
+    height: 35px;
+    border: 1px solid var(--gradient);
+    background: var(--gradient);
+    color: var(--white);
+    cursor: pointer;
+}
+
+hr{
+    border-color: var(--primary);
+}
+
+footer{
+    border-top: 1.5px solid var(--primary);
+    font-family: 'SF Mono Regular', sans-serif;
+    background-color: var(--dark);
+    margin-top: 50px;
+    width: 100%;
+    height: 230px;
+    padding: 30px;
+    color: var(--white);
+}
+footer img{
+    max-height: 100px;
+}
+footer .color-light-gray{
+    font-size: 16px;
+}
+footer span:not(.icon){
+    margin-left: 40px;
+}
+footer .icon{
+    font-size: 28px;
+    position: absolute;
+    margin-top: -8px;
+}
+
+a{
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.media-link{
+    background: var(--gray);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 17px;
+}
+.media-link.fa-gitlab:hover, .media-link.fa-linkedin-in:hover, .media-link.fa-github:hover{
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+@media(max-width: 701px){
+    p{
+        font-size: 13px !important;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    p.text-right{
+        text-align: center !important;
+    }
+
+    .header h2{
+        text-align: center;
+    }
+    .flags{
+        position: initial;
+        text-align: center !important;
+        font-size: 22px;
+    }
+    .flags a{
+        margin: 5px;
+    }
+    #myTab{
+        display: none;
+    }
+    .pic{
+        margin-bottom: 5px;
+    }
+    .tab-content > .tab-pane:not(.active) {
+        display: block !important;
+        opacity: 1;
+        margin-top: 35px;
+    }
+
+    footer{
+        height: auto;
+    }
+    footer .row{
+        margin: 0;
+    }
+    footer .col-sm-12{
+        margin-bottom: 25px;
+    }
+    footer .text-right{
+        text-align: center !important;
+    }
+}
+
+.no-padding{
+    padding: 0 !important;
+}

@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>&lt;{{ Your name }}/&gt;</title>
+
+        <link rel="stylesheet" href="src/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/font-awesome.min.css">
+        <link rel="stylesheet" href="src/css/variables.css">
+        <link rel="stylesheet" href="src/css/style.min.css">
+        <link rel="shortcut icon" href="src/images/me.png">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header col-12 no-padding">
+                <h2 class="color-white col-sm-12 col-md-12 no-padding" data-typer="Welcome to my template :)"></h2>
+            </div>
+
+            <div class="content shadow col-12 d-inline-flex">
+                <ul class="nav nav-tabs col-2 no-padding" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">/about_me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false" onclick="fillBars()">/skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">/experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="academic-tab" data-toggle="tab" href="#academic" role="tab" aria-controls="academic" aria-selected="false">/academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="references-tab" data-toggle="tab" href="#references" role="tab" aria-controls="references" aria-selected="false">/references</a>
+                    </li>
+                </ul>
+                <div class="tab-content col-sm-12 col-md-10 no-padding" id="myTabContent">
+                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                        <h2>/about_me</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="pic col-sm-12 col-md-3"><img src="src/images/me.png" width="100%"></div>
+                            <div class="col-sm-12 col-md-9">
+                                <h6 class="json-title">{{ Your name }} <code>=</code> {</h6>
+                                <div class="json">
+                                    <h6><code>"{{ key }}"</code>: <code>"{{ value }}"</code>,</h6>
+                                    <h6><code>"{{ key }}"</code>: <code>"{{ value }}"</code>,</h6>
+                                    <h6><code>"{{ key }}"</code>: <code>"{{ value }}"</code>,</h6>
+                                    <h6><code>"{{ key }}"</code>: <code>"{{ value }}"</code>,</h6>
+                                </div>
+                                <h6 class="json-end">}</h6>
+                                <p class="text-right">
+                                    <a href="#" download>
+                                        <button type="button" class="download-btn">
+                                                Download CV
+                                        </button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut viverra nisi. Fusce ornare sed massa in sagittis. Sed vitae viverra magna. Fusce dignissim finibus nunc, sed semper velit. Fusce id sem varius, pulvinar est sit amet, auctor urna. Maecenas nec dolor nisi. Quisque massa libero, pharetra at neque sit amet, lacinia lobortis neque. Fusce lobortis imperdiet suscipit. Curabitur a congue nunc, non iaculis nibh. Suspendisse eu massa est. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="s-tab">
+                        <h2>/skills</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut viverra nisi :)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <h5>Main skills:</h5>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-code"></i> {{ key }}</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="80"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-user-friends"></i> {{ key }}</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="20"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-poll"></i> {{ key }}</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="60"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <h5>Other skills:</h5>
+                                <div class="col-12 skill">
+                                    <label><i class="fab fa-windows"></i> {{ key }}</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="10"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                        <h2>/experience</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>💼 Role/Company name</h5>
+                                <p>
+                                    🗓 Start date - End date<br>
+                                    Description
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>💼 Role/Company name</h5>
+                                <p>
+                                    🗓 Start date - End date<br>
+                                    Description
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>💼 Role/Company name</h5>
+                                <p>
+                                    🗓 Start date - End date<br>
+                                    Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="academic" role="tabpanel" aria-labelledby="academic-tab">
+                        <h2>/academics</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>🎓 Course/Institution</h5>
+                                <p>
+                                    🗓 Start date - End date<br>
+                                    Description
+                                </p>
+                            </div>
+                            <div class="col-12 grid-block">
+                                <h5>🎓 Course/Institution</h5>
+                                <p>
+                                    🗓 Start date - End date<br>
+                                    Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="references" role="tabpanel" aria-labelledby="references-tab">
+                        <h2>/references</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>👨🏻‍💻 Person name/Company name</h5>
+                                <p>
+                                    <a href="tel:{{ value.tel }}">📞  Phone number</a>
+                                </p>
+                            </div>
+                            <div class="col-12 grid-block">
+                                <h5>👨🏻‍💻 Person name/Company name</h5>
+                                <p>
+                                    <a href="tel:{{ value.tel }}">📞  Phone number</a>
+                                </p>
+                            </div>
+                            <div class="col-12 grid-block">
+                                <h5>👨🏻‍💻 Person name/Company name</h5>
+                                <p>
+                                    <a href="tel:{{ value.tel }}">📞  Phone number</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="container justify-content-center">
+            <div class="row col-sm-12 col-md-10 offset-md-1">
+                <div class="col-sm-12 col-md-4">
+                    <p>
+                        <span class="icon">📍</span><span>{{ Your address }}</span>
+                    </p>
+                    <p>
+                        <a href="tel:{{ tel }}">
+                            <span class="icon">📞</span><span>{{ Your phone number }}</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:{{ email }}">
+                            <span class="icon">📨</span><span>{{ Your email address }}</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <img src="src/images/me.png">
+                </div>
+                <div class="col-sm-12 col-md-3 col-md-offset-1 text-right">
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fab fa-linkedin-in media-link"></i>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://gitlab.com/" target="_blank">
+                                <i class="fab fa-gitlab media-link"></i>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://github.com/" target="_blank">
+                                <i class="fab fa-github media-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Always give the right credits -->
+            <div class="col-12 text-center color-light-gray">
+                <a href="https://www.freepik.com/free-photos-vectors/background" target="_blank">Background vector created by pikisuperstar</a>
+            </div>
+            <div class="col-12 text-center color-light-gray">
+                <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Person icon made by Freepik</a>
+            </div>
+            <div class="col-12 text-center color-light-gray">
+                Template by: <a href="https://github.com/fredimaihub" target="_blank"><b>Fredi Maihub</b></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b99b18faa4.js" crossorigin="anonymous"></script>
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/main.min.js"></script>
+</html>

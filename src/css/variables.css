@@ -1,0 +1,55 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --dark: rgb(42, 42, 42);
+    --black: rgb(12, 12, 12);
+    --light-gray: rgb(175, 175, 175);
+    --dark-gray: rgb(94, 94, 94);
+    --gray: rgb(108, 108, 108);
+    --red: rgb(255, 85, 85);
+    --yellow: rgb(255, 195, 65);
+    --green: rgb(70, 210, 80);
+    --blue: rgb(70, 115, 130);
+    --purple: rgb(185, 50, 200);
+    --dark-transparent: #000c;
+    --shadow: rgba(0,0,0,.5);
+
+    --primary: var(--purple);
+    --gradient: linear-gradient(to right, var(--primary), var(--pink));
+}
+
+.color-primary{
+    color: var(--primary);
+}
+.color-white{
+    color: var(--white);
+}
+.color-dark{
+    color: var(--dark);
+}
+.color-black{
+    color: var(--black);
+}
+.color-light-gray{
+    color: var(--light-gray);
+}
+.color-dark-gray{
+    color: var(--dark-gray);
+}
+.color-gray{
+    color: var(--gray);
+}
+.color-red{
+    color: var(--red);
+}
+.color-yellow{
+    color: var(--yellow);
+}
+.color-green{
+    color: var(--green);
+}
+.color-blue{
+    color: var(--blue);
+}
+.color-purple{
+    color: var(--purple);
+}
